@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "industriallevel:titanium_ore",
+    "industriallevel:deepslate_titanium_ore",
+    "industriallevel:chlorophyte_ore",
+    "industriallevel:deepslate_chlorophyte_ore",
+    "industriallevel:bronze_ore",
+    "industriallevel:deepslate_bronze_ore",
+    "industriallevel:lead_ore",
+    "industriallevel:deepslate_lead_ore",
+    "industriallevel:nickel_ore",
+    "industriallevel:deepslate_nickel_ore",
+    "industriallevel:tin_ore",
+    "industriallevel:deepslate_tin_ore",
+    "industriallevel:osmium_ore",
+    "industriallevel:deepslate_osmium_ore",
+    "industriallevel:platinum_ore",
+    "industriallevel:deepslate_platinum_ore",
+    "industriallevel:silver_ore",
+    "industriallevel:deepslate_silver_ore",
+    "industriallevel:uranium_ore",
+    "industriallevel:deepslate_uranium_ore",
+    "industriallevel:zinc_ore",
+    "industriallevel:deepslate_zinc_ore",
+  ]
+}

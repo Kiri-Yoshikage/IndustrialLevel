@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "industriallevel:raw_nickel"
+  },
+  "result": "industriallevel:nickel_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "industriallevel:block/lead_ore"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "industriallevel:deepslate_lead_ore"
+  },
+  "result": "industriallevel:lead_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

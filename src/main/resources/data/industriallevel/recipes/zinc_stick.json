@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "tag": "industriallevel:zinc_ingot"
+    }
+  },
+  "result": {
+    "item": "industriallevel:zinc_stick",
+    "count": 4
+  }
+}

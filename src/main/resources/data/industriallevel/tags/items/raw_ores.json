@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "industriallevel:raw_titanium",
+    "industriallevel:raw_chlorophyte",
+    "industriallevel:raw_bronze",
+    "industriallevel:raw_nickel",
+    "industriallevel:raw_silver",
+    "industriallevel:raw_tin",
+    "industriallevel:raw_lead",
+    "industriallevel:raw_osmium",
+    "industriallevel:raw_platinum",
+    "industriallevel:raw_uranium",
+    "industriallevel:raw_zinc"
+  ]
+}

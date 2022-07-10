@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "industriallevel:chlorophyte_ore"
+  },
+  "result": "industriallevel:chlorophyte_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

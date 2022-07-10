@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "industriallevel:titanium_ingot",
+    "industriallevel:chlorophyte_ingot",
+    "industriallevel:bronze_ingot",
+    "industriallevel:nickel_ingot",
+    "industriallevel:tin_ingot",
+    "industriallevel:silver_ingot",
+    "industriallevel:lead_ingot",
+    "industriallevel:osmium_ingot",
+    "industriallevel:platinum_ingot",
+    "industriallevel:uranium_ingot",
+    "industriallevel:zinc_ingot"
+  ]
+}

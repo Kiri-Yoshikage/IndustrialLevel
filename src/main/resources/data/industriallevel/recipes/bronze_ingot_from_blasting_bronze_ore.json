@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "industriallevel:bronze_ore"
+  },
+  "result": "industriallevel:bronze_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

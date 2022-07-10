@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "industriallevel:titanium_stick",
+    "industriallevel:chlorophyte_stick",
+    "industriallevel:bronze_stick",
+    "industriallevel:nickel_stick",
+    "industriallevel:silver_stick",
+    "industriallevel:tin_stick",
+    "industriallevel:lead_stick",
+    "industriallevel:osmium_stick",
+    "industriallevel:platinum_stick",
+    "industriallevel:uranium_stick",
+    "industriallevel:zinc_stick"
+  ]
+}

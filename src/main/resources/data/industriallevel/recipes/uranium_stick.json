@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "tag": "industriallevel:uranium_ingot"
+    }
+  },
+  "result": {
+    "item": "industriallevel:uranium_stick",
+    "count": 4
+  }
+}

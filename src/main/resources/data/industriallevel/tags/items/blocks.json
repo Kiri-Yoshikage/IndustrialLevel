@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "industriallevel:titanium_block",
+    "industriallevel:chlorophyte_block",
+    "industriallevel:bronze_block",
+    "industriallevel:nickel_block",
+    "industriallevel:tin_block",
+    "industriallevel:silver_block",
+    "industriallevel:lead_block",
+    "industriallevel:osmium_block",
+    "industriallevel:platinum_block",
+    "industriallevel:uranium_block",
+    "industriallevel:zinc_block"
+  ]
+}

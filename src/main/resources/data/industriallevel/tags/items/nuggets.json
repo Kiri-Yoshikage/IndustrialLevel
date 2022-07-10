@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "industriallevel:titanium_nugget",
+    "industriallevel:chlorophyte_nugget",
+    "industriallevel:bronze_nugget",
+    "industriallevel:nickel_nugget",
+    "industriallevel:tin_nugget",
+    "industriallevel:silver_nugget",
+    "industriallevel:lead_nugget",
+    "industriallevel:osmium_nugget",
+    "industriallevel:platinum_nugget",
+    "industriallevel:uranium_nugget",
+    "industriallevel:zinc_nugget"
+  ]
+}
