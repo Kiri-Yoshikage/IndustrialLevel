@@ -1,6 +1,7 @@
 # Exclude Everything!!!
 
 /*
+.gradle/
 
 # Except the stuff i want to keep
 
