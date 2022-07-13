@@ -5,7 +5,7 @@
 # Except the stuff i want to keep
 
 # Gradle Stuff
-!gradle/
+!gradle/wrapper/
 !build.gradle
 !build.properties
 !settings.gradle
