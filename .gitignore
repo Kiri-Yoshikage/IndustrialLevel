@@ -1,0 +1,28 @@
+# Exclude Everything!!!
+
+/*
+build/
+run/
+.gradle/
+
+# Except the stuff i want to keep
+
+# Gradle Stuff
+!gradle/wrapper/
+!build.gradle
+!build.properties
+!settings.gradle
+
+# Git Stuff
+!.gitignore
+
+# Other Important Files
+!LICENSE
+!README.md
+!Change Log.txt
+!VERSION.txt
+!curse_upload.json
+
+# Other Important Folders
+!src/
+src/generated/resources/.cache
