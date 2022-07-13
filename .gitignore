@@ -1,12 +1,14 @@
 # Exclude Everything!!!
 
 /*
+build/
 .gradle/
+run/
 
 # Except the stuff i want to keep
 
 # Gradle Stuff
-!gradle/wrapper/
+!gradle/
 !build.gradle
 !build.properties
 !settings.gradle
