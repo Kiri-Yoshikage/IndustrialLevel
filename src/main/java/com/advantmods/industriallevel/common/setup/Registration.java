@@ -6,12 +6,10 @@ import com.advantmods.industriallevel.common.block.ore.*;
 import com.advantmods.industriallevel.common.item.ingot.*;
 import com.advantmods.industriallevel.common.item.nugget.*;
 import com.advantmods.industriallevel.common.item.raw.*;
-import com.advantmods.industriallevel.common.item.stick.*;
 import com.advantmods.industriallevel.common.item.tool.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,14 +19,12 @@ import net.minecraftforge.registries.RegistryObject;
 public class Registration {
     public static final DeferredRegister<Item> ITEM = DeferredRegister.create(ForgeRegistries.ITEMS, IndustrialLevel.ModId);
     public static final DeferredRegister<Block> BLOCK = DeferredRegister.create(ForgeRegistries.BLOCKS, IndustrialLevel.ModId);
-    public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, IndustrialLevel.ModId);
 
     public static void init(){
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ITEM.register(bus);
         BLOCK.register(bus);
-        BLOCK_ENTITY.register(bus);
 
         for (var block : BLOCK.getEntries()) {
             ITEM.register(block.getId().getPath(), ()-> new BlockItem(block.get(), new Item.Properties()
@@ -74,47 +70,36 @@ public class Registration {
     // Materials
     public static final RegistryObject<Item> TITANIUM_INGOT = ITEM.register("titanium_ingot", TitaniumIngot::new);
     public static final RegistryObject<Item> TITANIUM_NUGGET = ITEM.register("titanium_nugget", TitaniumNugget::new);
-    public static final RegistryObject<Item> TITANIUM_STICK = ITEM.register("titanium_stick", TitaniumStick::new);
     public static final RegistryObject<Item> RAW_TITANIUM = ITEM.register("raw_titanium", RawTitanium::new);
     public static final RegistryObject<Item> CHLOROPHYTE_INGOT = ITEM.register("chlorophyte_ingot", ChlorophyteIngot::new);
     public static final RegistryObject<Item> CHLOROPHYTE_NUGGET = ITEM.register("chlorophyte_nugget", ChlorophyteNugget::new);
-    public static final RegistryObject<Item> CHLOROPHYTE_STICK = ITEM.register("chlorophyte_stick", ChlorophyteStick::new);
     public static final RegistryObject<Item> RAW_CHLOROPHYTE = ITEM.register("raw_chlorophyte", RawChlorophyte::new);
     public static final RegistryObject<Item> BRONZE_INGOT = ITEM.register("bronze_ingot", BronzeIngot::new);
     public static final RegistryObject<Item> BRONZE_NUGGET = ITEM.register("bronze_nugget", BronzeNugget::new);
-    public static final RegistryObject<Item> BRONZE_STICK = ITEM.register("bronze_stick", BronzeStick::new);
     public static final RegistryObject<Item> RAW_BRONZE = ITEM.register("raw_bronze", RawBronze::new);
     public static final RegistryObject<Item> TIN_INGOT = ITEM.register("tin_ingot", TinIngot::new);
     public static final RegistryObject<Item> TIN_NUGGET = ITEM.register("tin_nugget", TinNugget::new);
-    public static final RegistryObject<Item> TIN_STICK = ITEM.register("tin_stick", TinStick::new);
     public static final RegistryObject<Item> RAW_TIN = ITEM.register("raw_tin", RawTin::new);
     public static final RegistryObject<Item> ZINC_INGOT = ITEM.register("zinc_ingot", ZincIngot::new);
     public static final RegistryObject<Item> ZINC_NUGGET = ITEM.register("zinc_nugget", ZincNugget::new);
-    public static final RegistryObject<Item> ZINC_STICK = ITEM.register("zinc_stick", ZincStick::new);
     public static final RegistryObject<Item> RAW_ZINC = ITEM.register("raw_zinc", RawZinc::new);
     public static final RegistryObject<Item> NICKEL_INGOT = ITEM.register("nickel_ingot", NickelIngot::new);
     public static final RegistryObject<Item> NICKEL_NUGGET = ITEM.register("nickel_nugget", NickelNugget::new);
-    public static final RegistryObject<Item> NICKEL_STICK = ITEM.register("nickel_stick", NickelStick::new);
     public static final RegistryObject<Item> RAW_NICKEL = ITEM.register("raw_nickel", RawNickel::new);
     public static final RegistryObject<Item> LEAD_INGOT = ITEM.register("lead_ingot", LeadIngot::new);
     public static final RegistryObject<Item> LEAD_NUGGET = ITEM.register("lead_nugget", LeadNugget::new);
-    public static final RegistryObject<Item> LEAD_STICK = ITEM.register("lead_stick", LeadStick::new);
     public static final RegistryObject<Item> RAW_LEAD = ITEM.register("raw_lead", RawLead::new);
     public static final RegistryObject<Item> OSMIUM_INGOT = ITEM.register("osmium_ingot", OsmiumIngot::new);
     public static final RegistryObject<Item> OSMIUM_NUGGET = ITEM.register("osmium_nugget", OsmiumNugget::new);
-    public static final RegistryObject<Item> OSMIUM_STICK = ITEM.register("osmium_stick", OsmiumStick::new);
     public static final RegistryObject<Item> RAW_OSMIUM = ITEM.register("raw_osmium", RawOsmium::new);
     public static final RegistryObject<Item> PLATINUM_INGOT = ITEM.register("platinum_ingot", PlatinumIngot::new);
     public static final RegistryObject<Item> PLATINUM_NUGGET = ITEM.register("platinum_nugget", PlatinumNugget::new);
-    public static final RegistryObject<Item> PLATINUM_STICK = ITEM.register("platinum_stick", PlatinumStick::new);
     public static final RegistryObject<Item> RAW_PLATINUM = ITEM.register("raw_platinum", RawPlatinum::new);
     public static final RegistryObject<Item> SILVER_INGOT = ITEM.register("silver_ingot", SilverIngot::new);
     public static final RegistryObject<Item> SILVER_NUGGET = ITEM.register("silver_nugget", SilverNugget::new);
-    public static final RegistryObject<Item> SILVER_STICK = ITEM.register("silver_stick", SilverStick::new);
     public static final RegistryObject<Item> RAW_SILVER = ITEM.register("raw_silver", RawSilver::new);
     public static final RegistryObject<Item> URANIUM_INGOT = ITEM.register("uranium_ingot", UraniumIngot::new);
     public static final RegistryObject<Item> URANIUM_NUGGET = ITEM.register("uranium_nugget", UraniumNugget::new);
-    public static final RegistryObject<Item> URANIUM_STICK = ITEM.register("uranium_stick", UraniumStick::new);
     public static final RegistryObject<Item> RAW_URANIUM = ITEM.register("raw_uranium", RawUranium::new);
 
     // Tools
