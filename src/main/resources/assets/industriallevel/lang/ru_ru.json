@@ -33,6 +33,8 @@
   "item.industriallevel.zinc_nugget": "Цинковый самородок",
   "item.industriallevel.raw_zinc": "Рудный цинк",
 
+  "item.industriallevel.ruby": "Рубин",
+
   "item.industriallevel.bronze_axe": "Бронзовый топор",
   "item.industriallevel.bronze_hoe": "Бронзовая мотыга",
   "item.industriallevel.bronze_pickaxe": "Бронзовая кирка",
@@ -88,11 +90,11 @@
   "item.industriallevel.silver_pickaxe": "Серебряная кирка",
   "item.industriallevel.silver_shovel": "Серебряная лопата",
   "item.industriallevel.silver_sword": "Серебряный меч",
-  "item.industriallevel.copper_axe": "Медный топор",
-  "item.industriallevel.copper_hoe": "Медная мотыга",
-  "item.industriallevel.copper_pickaxe": "Медная кирка",
-  "item.industriallevel.copper_shovel": "Медная лопата",
-  "item.industriallevel.copper_sword": "Медный меч",
+  "item.industriallevel.ruby_axe": "Рубиновый топор",
+  "item.industriallevel.ruby_hoe": "Рубиновая мотыга",
+  "item.industriallevel.ruby_pickaxe": "Рубиновая кирка",
+  "item.industriallevel.ruby_shovel": "Рубиновая лопата",
+  "item.industriallevel.ruby_sword": "Рубиновый меч",
 
   "item.industriallevel.bronze_boots": "Бронзовые ботинки",
   "item.industriallevel.bronze_leggings": "Бронзовые поножи",
@@ -138,6 +140,10 @@
   "item.industriallevel.zinc_leggings": "Цинковые поножи",
   "item.industriallevel.zinc_chestplate": "Цинковый нагрудник",
   "item.industriallevel.zinc_helmet": "Цинковый шлем",
+  "item.industriallevel.ruby_boots": "Рубиновые ботинки",
+  "item.industriallevel.ruby_leggings": "Рубиновые поножи",
+  "item.industriallevel.ruby_chestplate": "Рубиновый нагрудник",
+  "item.industriallevel.ruby_helmet": "Рубиновый шлем",
 
   "block.industriallevel.titanium_ore": "Титановая руда",
   "block.industriallevel.deepslate_titanium_ore": "Титаноносный глубинный сланец",
@@ -172,6 +178,9 @@
   "block.industriallevel.zinc_ore": "Цинковая руда",
   "block.industriallevel.deepslate_zinc_ore": "Цинконосный глубинный сланец",
   "block.industriallevel.zinc_block": "Цинковый блок",
+  "block.industriallevel.ruby_ore": "Рубиновая руда",
+  "block.industriallevel.deepslate_ruby_ore": "Рубиноносный глубинный сланец",
+  "block.industriallevel.ruby_block": "Рубиновый блок",
 
   "itemGroup.industriallevel.classic_tab": "IndustrialLevel"
 }

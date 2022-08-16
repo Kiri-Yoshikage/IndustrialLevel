@@ -11,6 +11,7 @@
     "industriallevel:osmium_block",
     "industriallevel:platinum_block",
     "industriallevel:uranium_block",
-    "industriallevel:zinc_block"
+    "industriallevel:zinc_block",
+    "industriallevel:ruby_block"
   ]
 }

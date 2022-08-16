@@ -179,6 +179,21 @@ public enum ILArmorMaterial implements ArmorMaterial {
             3.0f,
             1f,
             ()-> Ingredient.of(Registration.ZINC_INGOT.get())
+    ),
+    RUBY(
+            "ruby",
+            65,
+            new int[] {
+                    12,
+                    24,
+                    32,
+                    12
+            },
+            50,
+            SoundEvents.ARMOR_EQUIP_NETHERITE,
+            3.0f,
+            1f,
+            ()-> Ingredient.of(Registration.RUBY.get())
     );
 
     private static final int[] armorDurability = new int[]{13, 15, 16, 11};

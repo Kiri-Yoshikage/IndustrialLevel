@@ -23,5 +23,7 @@
     "industriallevel:deepslate_uranium_ore",
     "industriallevel:zinc_ore",
     "industriallevel:deepslate_zinc_ore",
+    "industriallevel:ruby_ore",
+    "industriallevel:deepslate_ruby_ore"
   ]
 }

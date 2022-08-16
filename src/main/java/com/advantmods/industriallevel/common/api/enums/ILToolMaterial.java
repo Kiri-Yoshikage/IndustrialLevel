@@ -96,6 +96,14 @@ public enum ILToolMaterial implements Tier {
             16.0F,
             1,
             () -> Ingredient.of(new ItemStack(Registration.SILVER_INGOT.get()))
+    ),
+    RUBY(
+            5,
+            8124,
+            12.0F,
+            16.0F,
+            1,
+            () -> Ingredient.of(new ItemStack(Registration.RUBY.get()))
     );
 
     private final int harvestLevel;

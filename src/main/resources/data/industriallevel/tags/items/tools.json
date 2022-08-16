@@ -56,15 +56,10 @@
     "industriallevel:tin_pickaxe",
     "industriallevel:tin_shovel",
     "industriallevel:tin_sword",
-    "industriallevel:copper_axe",
-    "industriallevel:copper_hoe",
-    "industriallevel:copper_pickaxe",
-    "industriallevel:copper_shovel",
-    "industriallevel:copper_sword",
-    "industriallevel:amethyst_axe",
-    "industriallevel:amethyst_hoe",
-    "industriallevel:amethyst_pickaxe",
-    "industriallevel:amethyst_shovel",
-    "industriallevel:amethyst_sword"
+    "industriallevel:ruby_axe",
+    "industriallevel:ruby_hoe",
+    "industriallevel:ruby_pickaxe",
+    "industriallevel:ruby_shovel",
+    "industriallevel:ruby_sword"
   ]
 }

@@ -3,10 +3,13 @@ package com.advantmods.industriallevel.common.setup;
 import com.advantmods.industriallevel.common.IndustrialLevel;
 import com.advantmods.industriallevel.common.block.block.*;
 import com.advantmods.industriallevel.common.block.ore.*;
+import com.advantmods.industriallevel.common.item.armor.*;
+import com.advantmods.industriallevel.common.item.gem.Ruby;
 import com.advantmods.industriallevel.common.item.ingot.*;
 import com.advantmods.industriallevel.common.item.nugget.*;
 import com.advantmods.industriallevel.common.item.raw.*;
 import com.advantmods.industriallevel.common.item.tool.*;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -66,6 +69,9 @@ public class Registration {
     public static final RegistryObject<Block> URANIUM_ORE = BLOCK.register("uranium_ore", UraniumOre::new);
     public static final RegistryObject<Block> DEEPSLATE_URANIUM_ORE = BLOCK.register("deepslate_uranium_ore", DeepslateUraniumOre::new);
     public static final RegistryObject<Block> URANIUM_BLOCK = BLOCK.register("uranium_block", UraniumBlock::new);
+    public static final RegistryObject<Block> RUBY_ORE = BLOCK.register("ruby_ore", RubyOre::new);
+    public static final RegistryObject<Block> DEEPSLATE_RUBY_ORE = BLOCK.register("deepslate_ruby_ore", DeepslateRubyOre::new);
+    public static final RegistryObject<Block> RUBY_BLOCK = BLOCK.register("ruby_block", RubyBlock::new);
 
     // Materials
     public static final RegistryObject<Item> TITANIUM_INGOT = ITEM.register("titanium_ingot", TitaniumIngot::new);
@@ -101,6 +107,7 @@ public class Registration {
     public static final RegistryObject<Item> URANIUM_INGOT = ITEM.register("uranium_ingot", UraniumIngot::new);
     public static final RegistryObject<Item> URANIUM_NUGGET = ITEM.register("uranium_nugget", UraniumNugget::new);
     public static final RegistryObject<Item> RAW_URANIUM = ITEM.register("raw_uranium", RawUranium::new);
+    public static final RegistryObject<Item> RUBY = ITEM.register("ruby", Ruby::new);
 
     // Tools
     public static final RegistryObject<Item> BRONZE_AXE = ITEM.register("bronze_axe", BronzeAxe::new);
@@ -109,12 +116,12 @@ public class Registration {
     public static final RegistryObject<Item> BRONZE_SHOVEL = ITEM.register("bronze_shovel", BronzeShovel::new);
     public static final RegistryObject<Item> BRONZE_SWORD = ITEM.register("bronze_sword", BronzeSword::new);
     public static final RegistryObject<Item> CHLOROPHYTE_AXE = ITEM.register("chlorophyte_axe", ChlorophyteAxe::new);
-    public static final RegistryObject<Item> CHLOROPHYTE_HOE = ITEM.register("chlorophyte_hoe", ChlorophyteAxe::new);
+    public static final RegistryObject<Item> CHLOROPHYTE_HOE = ITEM.register("chlorophyte_hoe", ChlorophyteHoe::new);
     public static final RegistryObject<Item> CHLOROPHYTE_PICKAXE = ITEM.register("chlorophyte_pickaxe", ChlorophytePickaxe::new);
     public static final RegistryObject<Item> CHLOROPHYTE_SHOVEL = ITEM.register("chlorophyte_shovel", ChlorophyteShovel::new);
     public static final RegistryObject<Item> CHLOROPHYTE_SWORD = ITEM.register("chlorophyte_sword", ChlorophyteSword::new);
     public static final RegistryObject<Item> NICKEL_AXE = ITEM.register("nickel_axe", NickelAxe::new);
-    public static final RegistryObject<Item> NICKEL_HOE = ITEM.register("nickel_hoe", NickelAxe::new);
+    public static final RegistryObject<Item> NICKEL_HOE = ITEM.register("nickel_hoe", NickelHoe::new);
     public static final RegistryObject<Item> NICKEL_PICKAXE = ITEM.register("nickel_pickaxe", NickelPickaxe::new);
     public static final RegistryObject<Item> NICKEL_SHOVEL = ITEM.register("nickel_shovel", NickelShovel::new);
     public static final RegistryObject<Item> NICKEL_SWORD = ITEM.register("nickel_sword", NickelSword::new);
@@ -124,17 +131,17 @@ public class Registration {
     public static final RegistryObject<Item> TITANIUM_SHOVEL = ITEM.register("titanium_shovel", TitaniumShovel::new);
     public static final RegistryObject<Item> TITANIUM_SWORD = ITEM.register("titanium_sword", TitaniumSword::new);
     public static final RegistryObject<Item> OSMIUM_AXE = ITEM.register("osmium_axe", OsmiumAxe::new);
-    public static final RegistryObject<Item> OSMIUM_HOE = ITEM.register("osmium_hoe", OsmiumAxe::new);
+    public static final RegistryObject<Item> OSMIUM_HOE = ITEM.register("osmium_hoe", OsmiumHoe::new);
     public static final RegistryObject<Item> OSMIUM_PICKAXE = ITEM.register("osmium_pickaxe", OsmiumPickaxe::new);
     public static final RegistryObject<Item> OSMIUM_SHOVEL = ITEM.register("osmium_shovel", OsmiumShovel::new);
     public static final RegistryObject<Item> OSMIUM_SWORD = ITEM.register("osmium_sword", OsmiumSword::new);
     public static final RegistryObject<Item> PLATINUM_AXE = ITEM.register("platinum_axe", PlatinumAxe::new);
-    public static final RegistryObject<Item> PLATINUM_HOE = ITEM.register("platinum_hoe", PlatinumAxe::new);
+    public static final RegistryObject<Item> PLATINUM_HOE = ITEM.register("platinum_hoe", PlatinumHoe::new);
     public static final RegistryObject<Item> PLATINUM_PICKAXE = ITEM.register("platinum_pickaxe", PlatinumPickaxe::new);
     public static final RegistryObject<Item> PLATINUM_SHOVEL = ITEM.register("platinum_shovel", PlatinumShovel::new);
     public static final RegistryObject<Item> PLATINUM_SWORD = ITEM.register("platinum_sword", PlatinumSword::new);
     public static final RegistryObject<Item> URANIUM_AXE = ITEM.register("uranium_axe", UraniumAxe::new);
-    public static final RegistryObject<Item> URANIUM_HOE = ITEM.register("uranium_hoe", UraniumAxe::new);
+    public static final RegistryObject<Item> URANIUM_HOE = ITEM.register("uranium_hoe", UraniumHoe::new);
     public static final RegistryObject<Item> URANIUM_PICKAXE = ITEM.register("uranium_pickaxe", UraniumPickaxe::new);
     public static final RegistryObject<Item> URANIUM_SHOVEL = ITEM.register("uranium_shovel", UraniumShovel::new);
     public static final RegistryObject<Item> URANIUM_SWORD = ITEM.register("uranium_sword", UraniumSword::new);
@@ -144,18 +151,121 @@ public class Registration {
     public static final RegistryObject<Item> LEAD_SHOVEL = ITEM.register("lead_shovel", LeadShovel::new);
     public static final RegistryObject<Item> LEAD_SWORD = ITEM.register("lead_sword", LeadSword::new);
     public static final RegistryObject<Item> ZINC_AXE = ITEM.register("zinc_axe", ZincAxe::new);
-    public static final RegistryObject<Item> ZINC_HOE = ITEM.register("zinc_hoe", ZincAxe::new);
+    public static final RegistryObject<Item> ZINC_HOE = ITEM.register("zinc_hoe", ZincHoe::new);
     public static final RegistryObject<Item> ZINC_PICKAXE = ITEM.register("zinc_pickaxe", ZincPickaxe::new);
     public static final RegistryObject<Item> ZINC_SHOVEL = ITEM.register("zinc_shovel", ZincShovel::new);
     public static final RegistryObject<Item> ZINC_SWORD = ITEM.register("zinc_sword", ZincSword::new);
     public static final RegistryObject<Item> TIN_AXE = ITEM.register("tin_axe", TinAxe::new);
-    public static final RegistryObject<Item> TIN_HOE = ITEM.register("tin_hoe", TinAxe::new);
+    public static final RegistryObject<Item> TIN_HOE = ITEM.register("tin_hoe", TinHoe::new);
     public static final RegistryObject<Item> TIN_PICKAXE = ITEM.register("tin_pickaxe", TinPickaxe::new);
     public static final RegistryObject<Item> TIN_SHOVEL = ITEM.register("tin_shovel", TinShovel::new);
     public static final RegistryObject<Item> TIN_SWORD = ITEM.register("tin_sword", TinSword::new);
     public static final RegistryObject<Item> SILVER_AXE = ITEM.register("silver_axe", SilverAxe::new);
-    public static final RegistryObject<Item> SILVER_HOE = ITEM.register("silver_hoe", SilverAxe::new);
+    public static final RegistryObject<Item> SILVER_HOE = ITEM.register("silver_hoe", SilverHoe::new);
     public static final RegistryObject<Item> SILVER_PICKAXE = ITEM.register("silver_pickaxe", SilverPickaxe::new);
     public static final RegistryObject<Item> SILVER_SHOVEL = ITEM.register("silver_shovel", SilverShovel::new);
     public static final RegistryObject<Item> SILVER_SWORD = ITEM.register("silver_sword", SilverSword::new);
+    public static final RegistryObject<Item> RUBY_AXE = ITEM.register("ruby_axe", RubyAxe::new);
+    public static final RegistryObject<Item> RUBY_HOE = ITEM.register("ruby_hoe", RubyHoe::new);
+    public static final RegistryObject<Item> RUBY_PICKAXE = ITEM.register("ruby_pickaxe", RubyPickaxe::new);
+    public static final RegistryObject<Item> RUBY_SHOVEL = ITEM.register("ruby_shovel", RubyShovel::new);
+    public static final RegistryObject<Item> RUBY_SWORD = ITEM.register("ruby_sword", RubySword::new);
+
+    // Armors
+    public static final RegistryObject<Item> BRONZE_HELMET = ITEM.register("bronze_helmet",
+            ()-> new BronzeArmor(EquipmentSlot.HEAD));
+    public static final RegistryObject<Item> BRONZE_CHESTPLATE = ITEM.register("bronze_chestplate",
+            ()-> new BronzeArmor(EquipmentSlot.CHEST));
+    public static final RegistryObject<Item> BRONZE_LEGS = ITEM.register("bronze_leggings",
+            ()-> new BronzeArmor(EquipmentSlot.LEGS));
+    public static final RegistryObject<Item> BRONZE_BOOTS = ITEM.register("bronze_boots",
+            ()-> new BronzeArmor(EquipmentSlot.FEET));
+    public static final RegistryObject<Item> CHLOROPHYTE_HELMET = ITEM.register("chlorophyte_helmet",
+            ()-> new ChlorophyteArmor(EquipmentSlot.HEAD));
+    public static final RegistryObject<Item> CHLOROPHYTE_CHESTPLATE = ITEM.register("chlorophyte_chestplate",
+            ()-> new ChlorophyteArmor(EquipmentSlot.CHEST));
+    public static final RegistryObject<Item> CHLOROPHYTE_LEGS = ITEM.register("chlorophyte_leggings",
+            ()-> new ChlorophyteArmor(EquipmentSlot.LEGS));
+    public static final RegistryObject<Item> CHLOROPHYTE_BOOTS = ITEM.register("chlorophyte_boots",
+            ()-> new ChlorophyteArmor(EquipmentSlot.FEET));
+    public static final RegistryObject<Item> NICKEL_HELMET = ITEM.register("nickel_helmet",
+            ()-> new NickelArmor(EquipmentSlot.HEAD));
+    public static final RegistryObject<Item> NICKEL_CHESTPLATE = ITEM.register("nickel_chestplate",
+            ()-> new NickelArmor(EquipmentSlot.CHEST));
+    public static final RegistryObject<Item> NICKEL_LEGS = ITEM.register("nickel_leggings",
+            ()-> new NickelArmor(EquipmentSlot.LEGS));
+    public static final RegistryObject<Item> NICKEL_BOOTS = ITEM.register("nickel_boots",
+            ()-> new NickelArmor(EquipmentSlot.FEET));
+    public static final RegistryObject<Item> TITANIUM_HELMET = ITEM.register("titanium_helmet",
+            ()-> new TitaniumArmor(EquipmentSlot.HEAD));
+    public static final RegistryObject<Item> TITANIUM_CHESTPLATE = ITEM.register("titanium_chestplate",
+            ()-> new TitaniumArmor(EquipmentSlot.CHEST));
+    public static final RegistryObject<Item> TITANIUM_LEGS = ITEM.register("titanium_leggings",
+            ()-> new TitaniumArmor(EquipmentSlot.LEGS));
+    public static final RegistryObject<Item> TITANIUM_BOOTS = ITEM.register("titanium_boots",
+            ()-> new TitaniumArmor(EquipmentSlot.FEET));
+    public static final RegistryObject<Item> OSMIUM_HELMET = ITEM.register("osmium_helmet",
+            ()-> new OsmiumArmor(EquipmentSlot.HEAD));
+    public static final RegistryObject<Item> OSMIUM_CHESTPLATE = ITEM.register("osmium_chestplate",
+            ()-> new OsmiumArmor(EquipmentSlot.CHEST));
+    public static final RegistryObject<Item> OSMIUM_LEGS = ITEM.register("osmium_leggings",
+            ()-> new OsmiumArmor(EquipmentSlot.LEGS));
+    public static final RegistryObject<Item> OSMIUM_BOOTS = ITEM.register("osmium_boots",
+            ()-> new OsmiumArmor(EquipmentSlot.FEET));
+    public static final RegistryObject<Item> PLATINUM_HELMET = ITEM.register("platinum_helmet",
+            ()-> new PlatinumArmor(EquipmentSlot.HEAD));
+    public static final RegistryObject<Item> PLATINUM_CHESTPLATE = ITEM.register("platinum_chestplate",
+            ()-> new PlatinumArmor(EquipmentSlot.CHEST));
+    public static final RegistryObject<Item> PLATINUM_LEGS = ITEM.register("platinum_leggings",
+            ()-> new PlatinumArmor(EquipmentSlot.LEGS));
+    public static final RegistryObject<Item> PLATINUM_BOOTS = ITEM.register("platinum_boots",
+            ()-> new PlatinumArmor(EquipmentSlot.FEET));
+    public static final RegistryObject<Item> URANIUM_HELMET = ITEM.register("uranium_helmet",
+            ()-> new UraniumArmor(EquipmentSlot.HEAD));
+    public static final RegistryObject<Item> URANIUM_CHESTPLATE = ITEM.register("uranium_chestplate",
+            ()-> new UraniumArmor(EquipmentSlot.CHEST));
+    public static final RegistryObject<Item> URANIUM_LEGS = ITEM.register("uranium_leggings",
+            ()-> new UraniumArmor(EquipmentSlot.LEGS));
+    public static final RegistryObject<Item> URANIUM_BOOTS = ITEM.register("uranium_boots",
+            ()-> new UraniumArmor(EquipmentSlot.FEET));
+    public static final RegistryObject<Item> LEAD_HELMET = ITEM.register("lead_helmet",
+            ()-> new LeadArmor(EquipmentSlot.HEAD));
+    public static final RegistryObject<Item> LEAD_CHESTPLATE = ITEM.register("lead_chestplate",
+            ()-> new LeadArmor(EquipmentSlot.CHEST));
+    public static final RegistryObject<Item> LEAD_LEGS = ITEM.register("lead_leggings",
+            ()-> new LeadArmor(EquipmentSlot.LEGS));
+    public static final RegistryObject<Item> LEAD_BOOTS = ITEM.register("lead_boots",
+            ()-> new LeadArmor(EquipmentSlot.FEET));
+    public static final RegistryObject<Item> ZINC_HELMET = ITEM.register("zinc_helmet",
+            ()-> new ZincArmor(EquipmentSlot.HEAD));
+    public static final RegistryObject<Item> ZINC_CHESTPLATE = ITEM.register("zinc_chestplate",
+            ()-> new ZincArmor(EquipmentSlot.CHEST));
+    public static final RegistryObject<Item> ZINC_LEGS = ITEM.register("zinc_leggings",
+            ()-> new ZincArmor(EquipmentSlot.LEGS));
+    public static final RegistryObject<Item> ZINC_BOOTS = ITEM.register("zinc_boots",
+            ()-> new ZincArmor(EquipmentSlot.FEET));
+    public static final RegistryObject<Item> TIN_HELMET = ITEM.register("tin_helmet",
+            ()-> new TinArmor(EquipmentSlot.HEAD));
+    public static final RegistryObject<Item> TIN_CHESTPLATE = ITEM.register("tin_chestplate",
+            ()-> new TinArmor(EquipmentSlot.CHEST));
+    public static final RegistryObject<Item> TIN_LEGS = ITEM.register("tin_leggings",
+            ()-> new TinArmor(EquipmentSlot.LEGS));
+    public static final RegistryObject<Item> TIN_BOOTS = ITEM.register("tin_boots",
+            ()-> new TinArmor(EquipmentSlot.FEET));
+    public static final RegistryObject<Item> SILVER_HELMET = ITEM.register("silver_helmet",
+            ()-> new SilverArmor(EquipmentSlot.HEAD));
+    public static final RegistryObject<Item> SILVER_CHESTPLATE = ITEM.register("silver_chestplate",
+            ()-> new SilverArmor(EquipmentSlot.CHEST));
+    public static final RegistryObject<Item> SILVER_LEGS = ITEM.register("silver_leggings",
+            ()-> new SilverArmor(EquipmentSlot.LEGS));
+    public static final RegistryObject<Item> SILVER_BOOTS = ITEM.register("silver_boots",
+            ()-> new SilverArmor(EquipmentSlot.FEET));
+    public static final RegistryObject<Item> RUBY_HELMET = ITEM.register("ruby_helmet",
+            ()-> new RubyArmor(EquipmentSlot.HEAD));
+    public static final RegistryObject<Item> RUBY_CHESTPLATE = ITEM.register("ruby_chestplate",
+            ()-> new RubyArmor(EquipmentSlot.CHEST));
+    public static final RegistryObject<Item> RUBY_LEGS = ITEM.register("ruby_leggings",
+            ()-> new RubyArmor(EquipmentSlot.LEGS));
+    public static final RegistryObject<Item> RUBY_BOOTS = ITEM.register("ruby_boots",
+            ()-> new RubyArmor(EquipmentSlot.FEET));
 }
