@@ -1,7 +1,7 @@
-Java Launcher: C:\Users\itan3\.jdks\corretto-17.0.3\bin\java.exe
-Arguments: '--inJar, C:\Users\itan3\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19-41.0.45\forge-1.19-41.0.45-injected.jar, --outJar, C:\Users\itan3\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19-41.0.45_mapped_official_1.19\forge-1.19-41.0.45_mapped_official_1.19.jar, --logFile, accesstransform.log, --atFile, D:\Development\IndustrialLevel-Forge\build\_atJar_4\parent_at.cfg'
+Java Launcher: C:\Users\itan3\.jdks\corretto-17.0.4\bin\java.exe
+Arguments: '--inJar, C:\Users\itan3\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19.2-43.0.11\forge-1.19.2-43.0.11-injected.jar, --outJar, C:\Users\itan3\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19.2-43.0.11_mapped_official_1.19.2\forge-1.19.2-43.0.11_mapped_official_1.19.2.jar, --logFile, accesstransform.log, --atFile, D:\Development\IndustrialLevel\Forge\1.19\build\_atJar_4\parent_at.cfg'
 Classpath:
  - C:\Users\itan3\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\accesstransformers\8.0.7\accesstransformers-8.0.7-fatjar.jar
-Working directory: D:\Development\IndustrialLevel-Forge\build\_atJar_4
+Working directory: D:\Development\IndustrialLevel\Forge\1.19\build\_atJar_4
 Main class: net.minecraftforge.accesstransformer.TransformerProcessor
 ====================================
